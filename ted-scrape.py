@@ -33,8 +33,8 @@ headers = {'User-Agent': _USERAGENT}
 
 last_url = "http://feeds.feedburner.com/tedtalks_video"
 view_url_p = "http://ted.com/talks/view/id/%(video_id)s"
-video_re = 'href="http://download.ted.com/talks/(?P<video_name>.+?).mp4">' \
-           'download the video</a> to play.'
+video_re = 'href="http://download.ted.com/talks/(?P<video_name>.+?).mp4\?' \
+           'apikey=TEDDOWNLOAD">download the video</a> to play.'
 author_re = '<a target="_blank" title="(?P<author_name>.+?)\'s bio" ' \
             'href="/speakers/.*?\.html">Full bio'
 date_re = '<strong>Filmed</strong> (?P<filmed_date>.+?) &bull;'
